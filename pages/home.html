@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Poker shizz</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"></link>
+        <link rel="stylesheet" type="text/css" href="../static/style.css" />
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="https://unpkg.com/react-router/umd/react-router.min.js"></script>
+        
+    </head>
+        <h1>home</h1>
+        <div id="content">
+            <div id="sidebar">
+                <div id="queued_players" class="players">
+                    <h2 class="players_title">Queued Players:</h2>
+                    <div id="react_queued_players">
+
+                    </div>
+                </div>
+                <div id="log" class="players">
+                    <h2 class="players_title">Log:</h2>
+                    <div id="react_log"></div>
+                </div>
+            </div>
+            <div id="game">
+                <div id="react_player_window"></div>
+                <div id="react_table"></div>
+                <div id="react_turn"></div>
+                <div id="react_pot"></div>
+                <div id="react_my_hand"></div>
+                <div id="react_betting_window"></div>
+            </div>
+        </div>
+        <script type="text/babel" src="../static/home.js"></script>
+    </body>
+</html>
